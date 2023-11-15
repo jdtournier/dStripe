@@ -31,6 +31,8 @@ import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 warnings.simplefilter(action='ignore', category=UserWarning)
 
+torch.backends.cudnn.benchmark = True
+
 global verbose
 verbose = True
 
