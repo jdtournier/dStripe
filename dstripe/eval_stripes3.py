@@ -470,7 +470,7 @@ if __name__ == '__main__':
     if not os.path.isdir(valpath):
         os.makedirs(valpath)
 
-    shutil.copy2(params_in, params)
+    shutil.copyfile(params_in, params)
     # ________________________ /TODO clean up
 
     poverride_dict = {"valpath": valpath, "datadir": datadir}
